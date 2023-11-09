@@ -1,3 +1,12 @@
+#Real-Time Face Detection 
+
+
+
+
+
+
+
+
 import cv2
 
 face_classifier = cv2.CascadeClassifier(
