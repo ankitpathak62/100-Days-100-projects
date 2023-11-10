@@ -8,5 +8,5 @@ qr=qrcode.QRCode(version=1,
 qr.add_data("https://www.youtube.com/@Sunfiresensei")
 
 qr.make(fit=True)
-img=qr.make_image(fill_color="red",back_color="black")
+img=qr.make_image(fill_color="blue",back_color="white")
 img.save("youtube.png")
