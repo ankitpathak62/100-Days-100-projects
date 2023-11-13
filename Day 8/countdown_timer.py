@@ -16,4 +16,4 @@ def main():
         print("Invalid input. Please enter a valid number of seconds.")
 
 if __name__ == "__main__":
-    main()
+    main() 
