@@ -1,14 +1,19 @@
-import time  
-  
-def countdown(c):      
-    while c:  
-        m, s = divmod(c, 60)  
-        timer = '{:02d}:{:02d}'.format(m, s)  
-        print(timer, end="\r")  
-        time.sleep(1)  
-        c -= 1       
-    print('Fire in the hole!!')  
+import time
 
-c = input("Enter the time value in seconds: ")  
+def countdown_timer(seconds):
+    while seconds > 0:
+        print(f"Time remaining: {seconds} seconds")
+        time.sleep(1)  # Delay for 1 second
+        seconds -= 1
 
-countdown(int(c))  
+    print("Time's up!")
+
+def main():
+    try:
+        seconds = int(input("Enter the countdown time in seconds: "))
+        countdown_timer(seconds)
+    except ValueError:
+        print("Invalid input. Please enter a valid number of seconds.")
+
+if __name__ == "__main__":
+    main()
