@@ -22,7 +22,6 @@ alarm_period=alarm_time[6:8].upper()
 print('setting alarm.....')
 
 
-
 while True:
     current_time=datetime.now()
     current_hour=current_time.strftime('%I')
